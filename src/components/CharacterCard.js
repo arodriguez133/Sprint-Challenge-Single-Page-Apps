@@ -26,11 +26,12 @@ export default function CharacterCard(props) {
   console.log(props)
   return (
     <CardStyle>
+      <img src = {props.char.image}/>
       <TextStyle>
         <H1Style>
-           <h1>{props.name}</h1>
+           <h1>{props.char.name}</h1>
         </H1Style>
-           <h3>{props.status}</h3>
+           <h3>{props.char.status}</h3>
       </TextStyle>
     </CardStyle>
 
